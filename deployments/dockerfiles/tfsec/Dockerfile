@@ -1,6 +1,6 @@
 # Dockerfile used to create "husyci/tfsec" image
 # https://hub.docker.com/r/huskyci/tfsec/
-FROM golang:1.13-alpine
+FROM golang:1.18.5-alpine
 
 RUN apk update && apk upgrade \
 	&& apk add git jq openssh-client curl
