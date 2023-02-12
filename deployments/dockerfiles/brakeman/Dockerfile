@@ -1,7 +1,7 @@
 # Dockerfile used to create "husyci/brakeman" image
 # https://hub.docker.com/r/huskyci/brakeman/
 
-FROM ruby:2.4-alpine
+FROM ruby:2.7.7-alpine
 
 RUN apk update && apk upgrade \
 	&& apk add --no-cache alpine-sdk bash openssh-client \
